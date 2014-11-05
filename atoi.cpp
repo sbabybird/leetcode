@@ -15,6 +15,9 @@ class Solution {
         else if (p == '+') {
           continue;
         }
+        else if (p<48 || p>57) {
+          return 0;
+        }
         else {
           r = r*10;
           r += p-48;
